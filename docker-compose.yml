@@ -1,0 +1,9 @@
+version: '3'
+services:
+  qmk:
+    environment:
+      keyboard: ergodox_ez
+      keymap: kajisha
+    build: .
+    volumes:
+      - .:/qmk
